@@ -1,5 +1,6 @@
-*{
-    background-color: #56764c;
+body{
+    /* background-color: #56764c; */
+    background-image: linear-gradient(to right, #007fff , #00ffaa);
 }
 
 #container {
@@ -9,17 +10,18 @@
 #ball {
     width: 20px;
     height: 20px;
-    background-color: #ffeb3b;
+    /* background-color: #ffeb3b; */
+    background: radial-gradient(ellipse at center, #fb83fa 0%,#e93cec 100%);
     position: fixed;
-    top: 20px;
+    top: 320px;
     left: 50%;
     /* left: 52.5%; */
     border-radius: 50%;
 }
 
 #rod1, #rod2 {
-    width: 200px;
     height: 20px;
+    width: 250px;
     position: fixed;
     left: 44%;
     /* left: 50%; */
@@ -30,11 +32,15 @@
 }
 
 #rod1 {
-    background-color: blue;
-    top: 0px;    
+    background: radial-gradient(ellipse at center, #627d4d 0%,#1f3b08 100%);
+    top: 0px; 
+    border-top-right-radius: 13rem;
+    border-top-left-radius: 13rem;   
 }
 
 #rod2 {
-    background-color: rgb(121 0 0);
+    background: radial-gradient(ellipse at center, #a90329 0%,#8f0222 44%,#6d0019 100%);
     bottom: 0px;
+    border-bottom-right-radius: 13rem;
+    border-bottom-left-radius: 13rem;
 }
