@@ -13,7 +13,7 @@ body{
     /* background-color: #ffeb3b; */
     background: radial-gradient(ellipse at center, #fb83fa 0%,#e93cec 100%);
     position: fixed;
-    top: 320px;
+    top: 20px;
     left: 50%;
     /* left: 52.5%; */
     border-radius: 50%;
