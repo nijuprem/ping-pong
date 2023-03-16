@@ -20,7 +20,7 @@ let storeScore;
     // console.log(rod, maxscore)
 
     if (rod === null || maxscore === null) {
-        alert("This is the first time you are playing this game. LET'S START");
+        alert("This is the first time you are playing this game. Press Enter to START");
         maxscore = 0;
         rod = "Rod1"
     } else {
@@ -77,8 +77,8 @@ document.addEventListener('keydown', function(event){
     let rod2W = rod2.offsetWidth;
     let rod1H = rod1.offsetHeight;
     let rod2H = rod2.offsetHeight;
-
-    if(event.keyCode == 68){
+    console.log(event.keyCode)
+    if(event.keyCode == 68 || event.keyCode == 39){
         if(left1< (innerW-rod1W) || left2< (innerW - rod2W)){
             
             // console.log("D pressed");
@@ -87,7 +87,7 @@ document.addEventListener('keydown', function(event){
     }
     }
 
-    if(event.keyCode == 65){
+    if(event.keyCode == 65 || event.keyCode == 37){
 
         if(left1> 5 || left2 >5){
             // console.log("A pressed");
